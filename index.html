@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SellFlow Africa | Stop Losing WhatsApp Sales & Track M-Pesa</title>
+    <meta name="description" content="SellFlow helps Kenyan businesses track WhatsApp leads, manage M-Pesa payments, and automate follow-ups. Start closing more sales today for only KES 500/month.">
+    <meta name="keywords" content="WhatsApp CRM Kenya, M-Pesa payment tracking, SellFlow Africa, Kenyan business tools, WhatsApp automation sales">
+    
+    <!-- Open Graph for Social Sharing -->
+    <meta property="og:title" content="Stop Losing Sales on WhatsApp - SellFlow Africa">
+    <meta property="og:description" content="The simple sales system for Kenyan businesses using WhatsApp and M-Pesa.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sellflow.smartbizsystemes.co.ke">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary-navy: #0f172a;
+            --whatsapp-green: #25D366;
+            --mpesa-green: #059669;
+            --text-gray: #475569;
+            --light-bg: #f8fafc;
+            --accent-blue: #3b82f6;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--primary-navy);
+            background-color: #ffffff;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* --- Header --- */
+        header {
+            padding: 20px 0;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        .logo {
+            font-weight: 800;
+            font-size: 1.5rem;
+            color: var(--primary-navy);
+            text-decoration: none;
+        }
+        .logo span { color: var(--mpesa-green); }
+
+        /* --- Hero Section --- */
+        .hero {
+            padding: 80px 0 60px;
+            text-align: center;
+            background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
+        }
+        h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+            letter-spacing: -1px;
+            line-height: 1.1;
+        }
+        .subheadline {
+            font-size: 1.25rem;
+            color: var(--text-gray);
+            max-width: 700px;
+            margin: 0 auto 30px;
+        }
+        .cta-btn {
+            display: inline-block;
+            background-color: var(--whatsapp-green);
+            color: white;
+            padding: 18px 35px;
+            border-radius: 12px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            text-decoration: none;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+        }
+        .cta-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+        }
+        .trust-line {
+            display: block;
+            margin-top: 15px;
+            font-size: 0.85rem;
+            color: var(--text-gray);
+        }
+
+        /* --- Pain Points --- */
+        .problem-section {
+            padding: 60px 0;
+            background-color: #fff1f2; /* Light red/rose tint */
+            border-radius: 20px;
+            margin: 20px;
+        }
+        .problem-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h2 { font-size: 2rem; margin-bottom: 20px; }
+        .pain-list {
+            list-style: none;
+            margin-bottom: 20px;
+        }
+        .pain-list li {
+            padding: 12px 0;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+            display: flex;
+            align-items: center;
+        }
+        .pain-list li::before {
+            content: "❌";
+            margin-right: 15px;
+        }
+
+        /* --- Solution / How it works --- */
+        .section-padding { padding: 80px 0; }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .step-card {
+            background: var(--light-bg);
+            padding: 30px;
+            border-radius: 15px;
+            border: 1px solid #e2e8f0;
+        }
+        .step-number {
+            background: var(--mpesa-green);
+            color: white;
+            width: 35px;
+            height: 35px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        /* --- Benefits --- */
+        .benefits { background-color: var(--primary-navy); color: white; padding: 80px 0; }
+        .benefit-item { display: flex; align-items: center; margin-bottom: 15px; }
+        .benefit-item::before { content: "✅"; margin-right: 15px; }
+
+        /* --- Pricing --- */
+        .pricing-card {
+            max-width: 400px;
+            margin: 40px auto;
+            padding: 40px;
+            border: 2px solid var(--mpesa-green);
+            border-radius: 20px;
+            text-align: center;
+            position: relative;
+        }
+        .pricing-tag {
+            background: var(--mpesa-green);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .price { font-size: 2.5rem; font-weight: 800; margin: 15px 0; }
+
+        /* --- FAQ --- */
+        .faq-section { max-width: 700px; margin: 0 auto; }
+        .faq-item { margin-bottom: 25px; }
+        .faq-item h4 { margin-bottom: 5px; color: var(--accent-blue); }
+
+        /* --- Footer --- */
+        footer {
+            padding: 40px 0;
+            text-align: center;
+            border-top: 1px solid #e2e8f0;
+            color: var(--text-gray);
+            font-size: 0.9rem;
+        }
+
+        /* --- Mobile Responsiveness --- */
+        @media (max-width: 768px) {
+            h1 { font-size: 2.2rem; }
+            .hero { padding: 50px 0; }
+            .grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <a href="#" class="logo">SellFlow<span>.Africa</span></a>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section class="hero">
+            <div class="container">
+                <h1>Stop Losing Sales on WhatsApp</h1>
+                <p class="subheadline">SellFlow automatically remembers your customers, tracks M-Pesa payments, and reminds you to follow up — so you close more deals without stress.</p>
+                <a href="https://wa.me/254734230445?text=Hi,%20I%20want%20SellFlow%20for%20my%20business" class="cta-btn">👉 Chat With Us on WhatsApp</a>
+                <small class="trust-line">Built for Kenyan businesses using WhatsApp & M-Pesa daily.</small>
+            </div>
+        </section>
+
+        <!-- THE PROBLEM -->
+        <div class="container">
+            <section class="problem-section">
+                <div class="problem-content">
+                    <h2>You’re not bad at selling — your system is.</h2>
+                    <ul class="pain-list">
+                        <li>Customers ask for prices then disappear</li>
+                        <li>You forget who to follow up with</li>
+                        <li>M-Pesa messages are mixed up</li>
+                        <li>You don’t know which leads paid</li>
+                        <li>Sales are lost every week without you noticing</li>
+                    </ul>
+                    <p><strong>If you sell on WhatsApp, this is happening right now.</strong></p>
+                </div>
+            </section>
+        </div>
+
+        <!-- THE SOLUTION -->
+        <section class="section-padding">
+            <div class="container">
+                <div style="text-align: center; max-width: 700px; margin: 0 auto;">
+                    <h2 style="color: var(--mpesa-green);">Meet SellFlow</h2>
+                    <p style="font-size: 1.2rem;">SellFlow turns your WhatsApp chats into a simple sales system that works in the African way.</p>
+                    <p style="margin-top: 20px;">No complicated software. No training needed. Just better follow-ups and more closed sales.</p>
+                </div>
+
+                <div class="grid">
+                    <div class="step-card">
+                        <div class="step-number">1</div>
+                        <h3>Customer messages you</h3>
+                        <p>SellFlow automatically saves them as a lead. No manual entry.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">2</div>
+                        <h3>Get Reminders</h3>
+                        <p>SellFlow reminds you to follow up. Never forget a “nitarudi” again.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">3</div>
+                        <h3>Track M-Pesa</h3>
+                        <p>Know exactly who paid and what they paid for. Fast and clear.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- KEY BENEFITS -->
+        <section class="benefits">
+            <div class="container">
+                <h2 style="text-align: center; margin-bottom: 40px;">Why SellFlow?</h2>
+                <div style="max-width: 600px; margin: 0 auto;">
+                    <div class="benefit-item">Close more deals without working more</div>
+                    <div class="benefit-item">Follow up at the right time, every time</div>
+                    <div class="benefit-item">Stop guessing who paid</div>
+                    <div class="benefit-item">See repeat customers clearly</div>
+                    <div class="benefit-item">Stay organized without spreadsheets</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- WHO IT'S FOR -->
+        <section class="section-padding">
+            <div class="container" style="text-align: center;">
+                <h2>Perfect For:</h2>
+                <div class="grid">
+                    <div style="padding: 20px; border: 1px solid #eee; border-radius: 10px;">🛍️ WhatsApp Online Sellers</div>
+                    <div style="padding: 20px; border: 1px solid #eee; border-radius: 10px;">📱 Electronics & Phone Shops</div>
+                    <div style="padding: 20px; border: 1px solid #eee; border-radius: 10px;">🏥 Insurance Agents</div>
+                    <div style="padding: 20px; border: 1px solid #eee; border-radius: 10px;">🚗 Car Dealers</div>
+                </div>
+                <p style="margin-top: 30px; font-style: italic;">If customers message you before paying — you need this.</p>
+            </div>
+        </section>
+
+        <!-- PRICING -->
+        <section class="section-padding" style="background-color: var(--light-bg);">
+            <div class="container">
+                <div class="pricing-card">
+                    <div class="pricing-tag">Early Access Offer 🇰🇪</div>
+                    <h3>Monthly Plan</h3>
+                    <div class="price">KES 500 <span style="font-size: 1rem; color: var(--text-gray);">/ mo</span></div>
+                    <ul style="list-style: none; text-align: left; margin: 20px 0; font-size: 0.95rem;">
+                        <li>✅ WhatsApp lead tracking</li>
+                        <li>✅ Follow-up reminders</li>
+                        <li>✅ M-Pesa payment tracking</li>
+                        <li>✅ Personal setup support</li>
+                    </ul>
+                    <a href="https://wa.me/254734230445?text=Hi,%20I%20want%20to%20join%20the%20Early%20Access" class="cta-btn" style="width: 100%;">Get Early Access</a>
+                    <p style="margin-top: 15px; font-size: 0.8rem; color: var(--text-gray);">⚠️ Limited to early users only.</p>
+                </div>
+                
+                <div style="text-align: center; max-width: 600px; margin: 40px auto; padding: 20px; border-left: 4px solid var(--accent-blue);">
+                    <h4>Early Access Transparency</h4>
+                    <p style="font-size: 0.9rem;">SellFlow is currently in early access. This means you get direct support, help shape the features, and lock in the lowest price forever. No risk. Cancel anytime.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="section-padding">
+            <div class="container">
+                <h2 style="text-align: center; margin-bottom: 40px;">Frequently Asked Questions</h2>
+                <div class="faq-section">
+                    <div class="faq-item">
+                        <h4>Do I need technical skills?</h4>
+                        <p>No. If you can use WhatsApp, you’re good.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>Is this better than a CRM?</h4>
+                        <p>Yes — it’s built for how Kenyan businesses actually sell. No complicated forms.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>Can my team use it?</h4>
+                        <p>Yes, multi-agent support is currently rolling out for early access users.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FINAL CTA -->
+        <section class="section-padding" style="text-align: center; border-top: 1px solid #eee;">
+            <div class="container">
+                <h2>Ready to stop losing sales?</h2>
+                <p style="margin-bottom: 30px;">Click below and we’ll set it up for you personally.</p>
+                <a href="https://wa.me/254734230445?text=Hi,%20I%20want%20SellFlow%20for%20my%20business" class="cta-btn">👉 Message Us on WhatsApp</a>
+                <p style="margin-top: 10px; font-size: 0.9rem;">Setup takes less than 15 minutes.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 SellFlow Africa by smartbizsystemes.co.ke</p>
+        </div>
+    </footer>
+
+</body>
+</html>
